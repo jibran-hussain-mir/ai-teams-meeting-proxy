@@ -247,5 +247,3 @@ npm run typecheck     # type checks for server and web
 npm run spike:audio   # proves audio in/out of the browser works on this machine
 npm run eval:brain -w server   # scripted meeting moments against Claude (uses your subscription)
 ```
-#   a i - t e a m s - m e e t i n g - p r o x y  
- 

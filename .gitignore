@@ -1,0 +1,23 @@
+# Dependencies and build output
+node_modules/
+dist/
+.vite/
+coverage/
+
+# Secrets: real settings stay on this computer. Only the template is shared.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local data: database (transcripts, meeting links), screenshots, voice cache
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# Logs and OS clutter
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+{
+  "name": "proxy",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AI meeting proxy that joins Microsoft Teams calls and speaks on your behalf",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,green \"npm run start -w server\" \"npm run dev -w web\"",
+    "test": "npm test -w server",
+    "spike:audio": "npm run spike:audio -w server",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}
